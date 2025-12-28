@@ -1,1 +1,2 @@
-console.log("Completely different in branch b");
+console.log("hello");
+console.log("world");
