@@ -1,2 +1,2 @@
-console.log("AAA");
-console.log("BBB");
+console.log("hello branch-b");
+console.log("world");
