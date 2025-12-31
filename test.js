@@ -1,2 +1,2 @@
-console.log("Test successful");
-console.log("And another test on antohter line");
+console.log(`environment variable set by the runner (passed to it by github): ${process.env.TEST_SECRET}`);
+console.log("world, change 1, change 2");
