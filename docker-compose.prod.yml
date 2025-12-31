@@ -2,5 +2,7 @@ version: "3.9"
 services:
   ci-test:
     build: .
+    environment:
+      TEST_SECRET: ${TEST_SECRET}
     volumes:
       - .:/app
