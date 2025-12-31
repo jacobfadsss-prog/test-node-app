@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  ci-test:
+    build: .
+    container_name: ci-test
+    volumes:
+      - .:/app
