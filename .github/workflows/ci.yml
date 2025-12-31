@@ -41,7 +41,7 @@ jobs:
       - name: Deploy via Docker Compose (Staging)
         run: |
           echo "Deploying to staging..."
-          docker compose -f docker-compose.yml up -d
+          docker compose -p staging -f docker-compose.staging.yml up -d
           docker ps
 
   # ------------------------
@@ -60,5 +60,5 @@ jobs:
       - name: Deploy via Docker Compose (Production)
         run: |
           echo "Deploying to production..."
-          docker compose -f docker-compose.yml up -d
+          docker compose -p prod -f docker-compose.prod.yml up -d
           docker ps
